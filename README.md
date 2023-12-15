@@ -29,6 +29,7 @@ Contributors: Kea and Jan
 * As regressors for baseline selection we took KNN, Random Forest, Adaboost, Linear Regression and LightGBM. First three cannot extrapolate, last two can.
 * Used MinMaxScaler.
 * Based on CV Linear Regression had the best performance in both RMSE and MAE. Mean CV RMSE is 0.3915. Mean CV MAE is 0.2391.
+  
   ![image](https://github.com/jtimko16/AutoML_Project2/assets/55859977/1944f369-56a1-4cae-8af0-4a8c0b183782)
 
 * Refitted Random Forest on train and predicted on test. Performance on test set (year 2016) (baseline results): RMSE 0.3288, MAE 0.2161.
@@ -49,8 +50,8 @@ Contributors: Kea and Jan
 --- | --- | --- | --- |--- |--- |---
 Data preprocessing | MinMax Scaler | .. | MinMax Scaler | Robust Scaler | .. | .. 
 Model | Linear Regression | .. | ExtraTreesMSE | Tuned Huber Regressor | .. | .. 
-RMSE | 0.3288 | .. | 0.3129 | 0.3261 | .. | .. 
-MAE  | 0.2161 | .. | 0.1967 | 0.1973 | .. | ..
+RMSE | 0.3288 | .. | 0.3129 | 0.3248 | .. | .. 
+MAE  | 0.2161 | .. | 0.1967 | 0.1994 | .. | ..
 
 
 ## Model interpretation
