@@ -29,6 +29,31 @@ Contributors: Kea and Jan
 * Used MinMaxScaler.
 * Cross-validation (CV) took about 15 minutes.
 * Based on CV Random Forest had the best performance in both RMSE and MAE. Mean CV RMSE is 0.4123. Mean CV MAE is 0.2464.
+  
 ![image](https://github.com/jtimko16/AutoML_Project2/assets/55859977/dbebab2c-0d6b-4ba2-8047-2d9ac31212cf)
 
 * Refitted Random Forest on train and predicted on test. Performance on test set (year 2016) (baseline results): RMSE 0.3497, MAE 0.2056.
+
+## AutoML Frameworks comparison
+
+* We compare 5 AutoML frameworks against the baseline results. The frameworks are: TPOT, AutoGluon, PyCaret, AutoKeras, and X.
+* The notebooks are here:
+  * TPOT notebook by Jan.
+  * AutoGluon [notebook](https://github.com/jtimko16/AutoML_Project2/blob/main/notebooks/3.AutoGluon.ipynb) by Andri.
+  * PyCaret notebook by Kea.
+  * AutoKeras notebook by Valerija.
+  * X notebook by Svetlana.
+ 
+ Comparison of AutoML frameworks by performance on the test set (year 2016).
+
+ Approach details | Baseline | TPOT | AutoGluon | PyCaret | AutoKeras | X
+--- | --- | --- | --- |--- |--- |---
+Data preprocessing | MinMax Scaler | .. | .. | .. | .. | .. 
+Model | Random Forest (n_estimators=50, other default hyperparams) | .. | .. | .. | .. | .. 
+RMSE | 0.3497 | .. | .. | .. | .. | .. 
+MAE  | 0.2056 | .. | .. | .. | .. | ..
+
+
+## Model interpretation
+
+Lime and Shap
