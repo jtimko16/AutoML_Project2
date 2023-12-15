@@ -48,10 +48,10 @@ Contributors: Kea and Jan
 
  Approach details | Baseline | TPOT | AutoGluon | PyCaret | AutoKeras | X
 --- | --- | --- | --- |--- |--- |---
-Data preprocessing | MinMax Scaler | .. | .. | .. | .. | .. 
-Model | Random Forest (n_estimators=50, other default hyperparams) | .. | .. | .. | .. | .. 
-RMSE | 0.3497 | .. | .. | .. | .. | .. 
-MAE  | 0.2056 | .. | .. | .. | .. | ..
+Data preprocessing | MinMax Scaler | .. | .. | Robust Scaler | .. | .. 
+Model | Random Forest (n_estimators=50, other default hyperparams) | .. | .. | Tuned Huber Regressor | .. | .. 
+RMSE | 0.3497 | .. | .. | 0.3261 | .. | .. 
+MAE  | 0.2056 | .. | .. | 0.1973 | .. | ..
 
 
 ## Model interpretation
