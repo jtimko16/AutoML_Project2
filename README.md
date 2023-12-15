@@ -50,8 +50,8 @@ Contributors: Kea and Jan
 --- | --- | --- | --- |--- |--- |---
 Data preprocessing | MinMax Scaler | .. | MinMax Scaler | Robust Scaler | .. | .. 
 Model | Linear Regression | PCA + ElasticNetCV | ExtraTreesMSE | Tuned Huber Regressor | .. | .. 
-RMSE | 0.3288 | 0.2836 | 0.3129 | 0.3248 | .. | .. 
-MAE  | 0.2161 | 0.1878 | 0.1967 | 0.1994 | .. | ..
+RMSE | 0.3288 | 0.2836 | 0.3069 | 0.3248 | .. | .. 
+MAE  | 0.2161 | 0.1878 | 0.1901 | 0.1994 | .. | ..
 
 
 ## Model interpretation
