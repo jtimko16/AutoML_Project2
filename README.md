@@ -32,7 +32,7 @@ Contributors: Kea and Jan
   
   ![image](https://github.com/jtimko16/AutoML_Project2/assets/55859977/1944f369-56a1-4cae-8af0-4a8c0b183782)
 
-* Refitted Random Forest on train and predicted on test. Performance on test set (year 2016) (baseline results): RMSE 0.3288, MAE 0.2161.
+* Refitted Linear Regression on train and predicted on test. Performance on test set (year 2016) (baseline results): RMSE 0.3288, MAE 0.2161.
 
 ## AutoML Frameworks comparison
 
