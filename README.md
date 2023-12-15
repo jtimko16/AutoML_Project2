@@ -12,7 +12,8 @@ Contributors: Jan and Kea
 * From Sow Maize and Harvest Maize extracted the month, encoded it and dropped the original columns.
 * Added time between sow and harvest.
 * Calculated the mean of pcp, tmax, tmin, and spi columns.
-* Created lagged dependent variable values for the preceding 3 years. Calculated 1-year lag for these mean columns. The lagged variables are: 'maize_lag-1', 'maize_lag-2', 'maize_lag-3', 'pcp_mean_lag-1','tmax_mean_lag-1','tmix_mean_lag-1','spi_mean_lag-1'.
+* Created lagged dependent variable values and the mean pcp, tmax, tmin, and spi for the preceding 3 years.
+* Dropped the pcp, tmax, tmin, and spi columns for the same year because we do not have this information at prediction time.
 * Kept only latest 10 years of data, so 2007-2016.
 
 In the final dataframe there are 32,359 rows, 30 countries, 3,887 Farms, 10 years of data.
@@ -25,14 +26,12 @@ Contributors: Kea and Jan
 ![image](https://github.com/jtimko16/AutoML_Project2/assets/55859977/ff4f1633-be5f-4d91-b711-1d30d19dc301)
 * From the train split created 5 Time Series data splits.
 ![image](https://github.com/jtimko16/AutoML_Project2/assets/55859977/4edc7758-0c5b-4025-80da-e582f09bc33c)
-* As regressors we took KNN, Random Forest, Adaboost.
+* As regressors for baseline selection we took KNN, Random Forest, Adaboost, Linear Regression and LightGBM. First three cannot extrapolate, last two can.
 * Used MinMaxScaler.
-* Cross-validation (CV) took about 15 minutes.
-* Based on CV Random Forest had the best performance in both RMSE and MAE. Mean CV RMSE is 0.4123. Mean CV MAE is 0.2464.
-  
-![image](https://github.com/jtimko16/AutoML_Project2/assets/55859977/dbebab2c-0d6b-4ba2-8047-2d9ac31212cf)
+* Based on CV Linear Regression had the best performance in both RMSE and MAE. Mean CV RMSE is 0.3915. Mean CV MAE is 0.2391.
+  ![image](https://github.com/jtimko16/AutoML_Project2/assets/55859977/1944f369-56a1-4cae-8af0-4a8c0b183782)
 
-* Refitted Random Forest on train and predicted on test. Performance on test set (year 2016) (baseline results): RMSE 0.3497, MAE 0.2056.
+* Refitted Random Forest on train and predicted on test. Performance on test set (year 2016) (baseline results): RMSE 0.3288, MAE 0.2161.
 
 ## AutoML Frameworks comparison
 
@@ -49,9 +48,9 @@ Contributors: Kea and Jan
  Approach details | Baseline | TPOT | AutoGluon | PyCaret | AutoKeras | X
 --- | --- | --- | --- |--- |--- |---
 Data preprocessing | MinMax Scaler | .. | MinMax Scaler | Robust Scaler | .. | .. 
-Model | Random Forest (n_estimators=50, other default hyperparams) | .. | ExtraTreesMSE | Tuned Huber Regressor | .. | .. 
-RMSE | 0.3497 | .. | 0.3129 | 0.3261 | .. | .. 
-MAE  | 0.2056 | .. | 0.1967 | 0.1973 | .. | ..
+Model | Linear Regression | .. | ExtraTreesMSE | Tuned Huber Regressor | .. | .. 
+RMSE | 0.3288 | .. | 0.3129 | 0.3261 | .. | .. 
+MAE  | 0.2161 | .. | 0.1967 | 0.1973 | .. | ..
 
 
 ## Model interpretation
