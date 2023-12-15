@@ -38,7 +38,7 @@ Contributors: Kea and Jan
 
 * We compare 5 AutoML frameworks against the baseline results. The frameworks are: TPOT, AutoGluon, PyCaret, AutoKeras, and X.
 * The notebooks are here:
-  * TPOT notebook by Jan.
+  * TPOT [notebook](https://github.com/jtimko16/AutoML_Project2/blob/main/notebooks/5.TPOT.ipynb) by Jan.
   * AutoGluon [notebook](https://github.com/jtimko16/AutoML_Project2/blob/main/notebooks/3.AutoGluon.ipynb) by Andri.
   * PyCaret [notebook](https://github.com/jtimko16/AutoML_Project2/blob/main/notebooks/4.PyCaret.ipynb) by Kea. Best model was tuned HuberRegressor(alpha=0.01, epsilon=1.1).
   * AutoKeras notebook by Valerija.
