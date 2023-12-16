@@ -41,17 +41,17 @@ Contributors: Kea and Jan
   * TPOT [notebook](https://github.com/jtimko16/AutoML_Project2/blob/main/notebooks/5.TPOT.ipynb) by Jan.
   * AutoGluon [notebook](https://github.com/jtimko16/AutoML_Project2/blob/main/notebooks/3.AutoGluon.ipynb) by Andri.
   * PyCaret [notebook](https://github.com/jtimko16/AutoML_Project2/blob/main/notebooks/4.PyCaret.ipynb) by Kea. Best model was tuned HuberRegressor(alpha=0.01, epsilon=1.1).
-  * AutoKeras notebook by Valerija.
+  * AutoKeras and h20 notebooks by Valerija.
   * X notebook by Svetlana.
  
  Comparison of AutoML frameworks by performance on the test set (year 2016).
 
- Approach details | Baseline | TPOT | AutoGluon | PyCaret | AutoKeras | X
+ Approach details | Baseline | TPOT | AutoGluon | PyCaret | AutoKeras | H2O
 --- | --- | --- | --- |--- |--- |---
 Data preprocessing | MinMax Scaler | .. | MinMax Scaler | Robust Scaler | .. | .. 
 Model | Linear Regression | PCA + ElasticNetCV | ExtraTreesMSE | Tuned Huber Regressor | .. | .. 
-RMSE | 0.3288 | 0.2836 | 0.3069 | 0.3248 | .. | .. 
-MAE  | 0.2161 | 0.1878 | 0.1901 | 0.1994 | .. | ..
+RMSE | 0.3288 | 0.2836 | 0.3069 | 0.3248 | 0.3361 | .. 
+MAE  | 0.2161 | 0.1878 | 0.1901 | 0.1994 | 0.113 | ..
 
 
 ## Model interpretation
