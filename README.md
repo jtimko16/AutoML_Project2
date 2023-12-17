@@ -98,7 +98,7 @@ Here is the full notebook with [Interpretability](https://github.com/jtimko16/Au
   ![image](https://github.com/jtimko16/AutoML_Project2/blob/main/plots/LIME_01.png)
 
     * South Africa example
-  ![image](https://github.com/jtimko16/AutoML_Project2/blob/main/plots/LIME_02.pngg)
+  ![image](https://github.com/jtimko16/AutoML_Project2/blob/main/plots/LIME_02.png)
 
     * Kenya example
 ![image](https://github.com/jtimko16/AutoML_Project2/blob/main/plots/LIME_02.png)
