@@ -48,7 +48,7 @@ Contributors: Kea and Jan
 
  Approach details | Baseline | TPOT | AutoGluon | PyCaret | AutoKeras | H2O
 --- | --- | --- | --- |--- |--- |---
-Data preprocessing | MinMax Scaler | None | MinMax Scaler | Robust Scaler | None | None 
+Data preprocessing | MinMax Scaler | None | MinMax Scaler | Robust Scaler | Automated  | Automated  
 Model | Linear Regression | PCA + ElasticNetCV | ExtraTreesMSE | Tuned Huber Regressor | NN* |  'StackedEnsemble_BestOfFamily'  
 RMSE | 0.3288 | 0.2818 | 0.3069 | 0.3248 | 0.4081 |  0.334 
 MAE  | 0.2161 | 0.1856 | 0.1901 | 0.1994 | 0.3361 | 0.2143
