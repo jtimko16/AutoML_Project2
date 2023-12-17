@@ -68,5 +68,8 @@ The best model in terms of performance on the test set, includes PCA which makes
 
 However, we use explainability tools on simple Random Forest model without PCA to get more insights to the important features, their relationship with the dependant variable and explanations for specific predictions.
 
-.. insert plots here
+Here is the full notebook with [Interpretability](https://github.com/jtimko16/AutoML_Project2/blob/main/notebooks/8.%20Interpretability.ipynb), which contains:
+* Information value using Random Forest (top 10 features)
+* Partial Dependence Plot
+* LIME explanation of three instances
 
