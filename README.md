@@ -64,7 +64,7 @@ AutoKeras NN - The structure of the model that AutoKeras chose is the following:
 
 The best model in terms of performance on the test set, includes PCA which makes interpretation difficult. We can examine which features had most influence on each component and which components were most important as inputs to the model:
 
-![image](https://github.com/jtimko16/AutoML_Project2/assets/55859977/9787f362-0593-45ea-9f81-5aa9d8dc080e)
+![image](https://github.com/jtimko16/AutoML_Project2/blob/main/plots/PCA_components_importance.png)
 
 However, we use explainability tools on simple Random Forest model without PCA to get more insights to the important features, their relationship with the dependant variable and explanations for specific predictions.
 
