@@ -100,6 +100,6 @@ Here is the full notebook with [Interpretability](https://github.com/jtimko16/Au
     * South Africa example
   ![image](https://github.com/jtimko16/AutoML_Project2/blob/main/plots/LIME_02.png)
 
-    * Kenya example
+    * Egypt example
   ![image](https://github.com/jtimko16/AutoML_Project2/blob/main/plots/LIME_03.png)
 
