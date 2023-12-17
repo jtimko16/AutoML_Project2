@@ -62,14 +62,21 @@ AutoKeras NN - The structure of the model that AutoKeras chose is the following:
 
 ## Model interpretation
 
+### The best TPOT model interepretation - by Kea
+
 The best model in terms of performance on the test set, includes PCA which makes interpretation difficult. We can examine which features had most influence on each component and which components were most important as inputs to the model:
 
 ![image](https://github.com/jtimko16/AutoML_Project2/blob/main/plots/PCA_components_importance.png)
 
-However, we use explainability tools on simple Random Forest model without PCA to get more insights to the important features, their relationship with the dependant variable and explanations for specific predictions.
+However, further we use explainability tools on simple Random Forest model without PCA to get more insights to the important features, their relationship with the dependant variable and explanations for specific predictions.
+
+### Model and Features Interpretability - by Jan
 
 Here is the full notebook with [Interpretability](https://github.com/jtimko16/AutoML_Project2/blob/main/notebooks/8.%20Interpretability.ipynb), which contains:
 * Information value using Random Forest (top 10 features)
+
+![image](plots\Random_Forest_features_importance.png)
+
 * Partial Dependence Plot
 * LIME explanation of three instances
 
