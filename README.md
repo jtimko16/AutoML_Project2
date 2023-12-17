@@ -28,11 +28,12 @@ Contributors: Kea and Jan
 ![image](https://github.com/jtimko16/AutoML_Project2/assets/55859977/4edc7758-0c5b-4025-80da-e582f09bc33c)
 * As regressors for baseline selection we took KNN, Random Forest, Adaboost, Linear Regression and LightGBM. First three cannot extrapolate, last two can.
 * Used MinMaxScaler.
-* Based on CV Linear Regression had the best performance in both RMSE and MAE. Mean CV RMSE is 0.3915. Mean CV MAE is 0.2391.
+* Based on CV Linear Regression had the best performance in both RMSE and MAE.
   
-  ![image](https://github.com/jtimko16/AutoML_Project2/assets/55859977/1944f369-56a1-4cae-8af0-4a8c0b183782)
+![image](https://github.com/jtimko16/AutoML_Project2/assets/55859977/f1274dfb-b6c2-4edf-ab48-fd0481b52b17)
 
-* Refitted Linear Regression on train and predicted on test. Performance on test set (year 2016) (baseline results): RMSE 0.3288, MAE 0.2161.
+
+* Refitted Linear Regression on train and predicted on test. Performance on test set (year 2016) (baseline results): RMSE 0.33, MAE 0.213.
 
 ## AutoML Frameworks comparison
 
@@ -50,8 +51,8 @@ Contributors: Kea and Jan
 --- | --- | --- | --- |--- |--- |---
 Data preprocessing | MinMax Scaler | None | MinMax Scaler | Robust Scaler | Automated  | Automated  
 Model | Linear Regression | PCA + ElasticNetCV | ExtraTreesMSE | Tuned Huber Regressor | NN* |  'StackedEnsemble_BestOfFamily'  
-RMSE | 0.3288 | 0.2818 | 0.3069 | 0.3248 | 0.4081 |  0.334 
-MAE  | 0.2161 | 0.1856 | 0.1901 | 0.1994 | 0.3361 | 0.2143
+RMSE | 0.33 | 0.2818 | 0.3069 | 0.3262 | 0.4081 |  0.334 
+MAE  | 0.213 | 0.1856 | 0.1901 | 0.2000 | 0.3361 | 0.2143
 
 AutoKeras NN - The structure of the model that AutoKeras chose is the following:
 * An input layer that takes in the features.
