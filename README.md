@@ -86,6 +86,9 @@ Here is the full notebook with [Interpretability](https://github.com/jtimko16/Au
     * Maize_lag-1 and lag-2 combined
   ![image](https://github.com/jtimko16/AutoML_Project2/blob/main/plots/PDP_Maize_lagged_combined.png)
 
+    * Longitude and Latitude separately
+  ![image](https://github.com/jtimko16/AutoML_Project2/blob/main/plots/PDP_lon_lan_separately.png)
+
     * Maize_lag-1 and precipitation 
   ![image](https://github.com/jtimko16/AutoML_Project2/blob/main/plots/PDP_combined_maize_lagged_precipitation.png)
 
