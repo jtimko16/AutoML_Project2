@@ -42,7 +42,7 @@ Contributors: Kea and Jan
   * AutoGluon [notebook](https://github.com/jtimko16/AutoML_Project2/blob/main/notebooks/3.AutoGluon.ipynb) by Andri.
   * PyCaret [notebook](https://github.com/jtimko16/AutoML_Project2/blob/main/notebooks/4.PyCaret.ipynb) by Kea. Best model was tuned HuberRegressor(alpha=0.01, epsilon=1.1).
   * AutoKeras [notebook](https://github.com/jtimko16/AutoML_Project2/blob/main/notebooks/6.AutoKeras.ipynb) and H2O [notebook](https://github.com/jtimko16/AutoML_Project2/blob/main/notebooks/7.h2o_no_countries_and_farm.ipynb) notebooks by Valerija. In H2O two best models have been compared, since those are StackedEnsemble_BestOfFamily and StackedEnsemble_AllModels and the results of the cross-validation could have been misleading.
-  * X notebook by Svetlana.
+
  
  Comparison of AutoML frameworks by performance on the test set (year 2016).
 
