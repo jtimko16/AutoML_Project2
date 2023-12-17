@@ -53,12 +53,12 @@ Model | Linear Regression | PCA + ElasticNetCV | ExtraTreesMSE | Tuned Huber Reg
 RMSE | 0.3288 | 0.2836 | 0.3069 | 0.3248 | 0.4081 |  0.3616 
 MAE  | 0.2161 | 0.1878 | 0.1901 | 0.1994 | 0.3361 | 0.2274
 
-* The structure of the model that AutoKeras chose is the following
-- An input layer that takes in the features.
-- A multi-category encoding layer which is likely handling categorical variables.
-- A dense layer with 32 neurons followed by a ReLU activation.
-- Another dense layer* with 16 neurons also followed by a ReLU activation.
-- A regression head(a single dense neuron with a linear activation), which is the output layer for regression tasks
+AutoKeras NN - The structure of the model that AutoKeras chose is the following:
+* An input layer that takes in the features.
+* A multi-category encoding layer which is likely handling categorical variables.
+* A dense layer with 32 neurons followed by a ReLU activation.
+* Another dense layer* with 16 neurons also followed by a ReLU activation.
+* A regression head(a single dense neuron with a linear activation), which is the output layer for regression tasks
 
 ## Model interpretation
 
