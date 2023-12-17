@@ -41,7 +41,7 @@ Contributors: Kea and Jan
   * TPOT [notebook](https://github.com/jtimko16/AutoML_Project2/blob/main/notebooks/5.TPOT.ipynb) by Jan.
   * AutoGluon [notebook](https://github.com/jtimko16/AutoML_Project2/blob/main/notebooks/3.AutoGluon.ipynb) by Andri.
   * PyCaret [notebook](https://github.com/jtimko16/AutoML_Project2/blob/main/notebooks/4.PyCaret.ipynb) by Kea. Best model was tuned HuberRegressor(alpha=0.01, epsilon=1.1).
-  * AutoKeras and H2O notebooks by Valerija.
+  * AutoKeras [notebook](https://github.com/jtimko16/AutoML_Project2/blob/main/notebooks/6.AutoKeras.ipynb) and H2O [notebook](https://github.com/jtimko16/AutoML_Project2/blob/main/notebooks/7.h2o_no_countries_and_farm.ipynb) notebooks by Valerija. In H2O two best models have been compared, since those are StackedEnsemble_BestOfFamily and StackedEnsemble_AllModels and the results of the cross-validation could have been misleading.
   * X notebook by Svetlana.
  
  Comparison of AutoML frameworks by performance on the test set (year 2016).
@@ -50,8 +50,8 @@ Contributors: Kea and Jan
 --- | --- | --- | --- |--- |--- |---
 Data preprocessing | MinMax Scaler | None | MinMax Scaler | Robust Scaler | None | None 
 Model | Linear Regression | PCA + ElasticNetCV | ExtraTreesMSE | Tuned Huber Regressor | NN* |  'StackedEnsemble_BestOfFamily'  
-RMSE | 0.3288 | 0.2818 | 0.3069 | 0.3248 | 0.4081 |  0.3616 
-MAE  | 0.2161 | 0.1856 | 0.1901 | 0.1994 | 0.3361 | 0.2274
+RMSE | 0.3288 | 0.2818 | 0.3069 | 0.3248 | 0.4081 |  0.334 
+MAE  | 0.2161 | 0.1856 | 0.1901 | 0.1994 | 0.3361 | 0.2143
 
 AutoKeras NN - The structure of the model that AutoKeras chose is the following:
 * An input layer that takes in the features.
