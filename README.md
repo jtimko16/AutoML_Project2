@@ -41,19 +41,32 @@ Contributors: Kea and Jan
   * TPOT [notebook](https://github.com/jtimko16/AutoML_Project2/blob/main/notebooks/5.TPOT.ipynb) by Jan.
   * AutoGluon [notebook](https://github.com/jtimko16/AutoML_Project2/blob/main/notebooks/3.AutoGluon.ipynb) by Andri.
   * PyCaret [notebook](https://github.com/jtimko16/AutoML_Project2/blob/main/notebooks/4.PyCaret.ipynb) by Kea. Best model was tuned HuberRegressor(alpha=0.01, epsilon=1.1).
-  * AutoKeras and h20 notebooks by Valerija.
+  * AutoKeras and H2O notebooks by Valerija.
   * X notebook by Svetlana.
  
  Comparison of AutoML frameworks by performance on the test set (year 2016).
 
  Approach details | Baseline | TPOT | AutoGluon | PyCaret | AutoKeras | H2O
 --- | --- | --- | --- |--- |--- |---
-Data preprocessing | MinMax Scaler | .. | MinMax Scaler | Robust Scaler | .. | .. 
-Model | Linear Regression | PCA + ElasticNetCV | ExtraTreesMSE | Tuned Huber Regressor | .. | .. 
-RMSE | 0.3288 | 0.2836 | 0.3069 | 0.3248 | 0.3361 | .. 
-MAE  | 0.2161 | 0.1878 | 0.1901 | 0.1994 | 0.113 | ..
+Data preprocessing | MinMax Scaler | None | MinMax Scaler | Robust Scaler | None | None 
+Model | Linear Regression | PCA + ElasticNetCV | ExtraTreesMSE | Tuned Huber Regressor | NN* |  'StackedEnsemble_BestOfFamily'  
+RMSE | 0.3288 | 0.2836 | 0.3069 | 0.3248 | 0.4081 |  0.3616 
+MAE  | 0.2161 | 0.1878 | 0.1901 | 0.1994 | 0.3361 | 0.2274
 
+AutoKeras NN - The structure of the model that AutoKeras chose is the following:
+* An input layer that takes in the features.
+* A multi-category encoding layer which is likely handling categorical variables.
+* A dense layer with 32 neurons followed by a ReLU activation.
+* Another dense layer* with 16 neurons also followed by a ReLU activation.
+* A regression head(a single dense neuron with a linear activation), which is the output layer for regression tasks
 
 ## Model interpretation
 
-Lime and Shap
+The best model in terms of performance on the test set, includes PCA which makes interpretation difficult. We can examine which features had most influence on each component and which components were most important as inputs to the model:
+
+![image](https://github.com/jtimko16/AutoML_Project2/assets/55859977/9787f362-0593-45ea-9f81-5aa9d8dc080e)
+
+However, we use explainability tools on simple Random Forest model without PCA to get more insights to the important features, their relationship with the dependant variable and explanations for specific predictions.
+
+.. insert plots here
+
