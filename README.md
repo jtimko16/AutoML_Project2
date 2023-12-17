@@ -62,14 +62,44 @@ AutoKeras NN - The structure of the model that AutoKeras chose is the following:
 
 ## Model interpretation
 
+### The best TPOT model interepretation - by Kea
+
 The best model in terms of performance on the test set, includes PCA which makes interpretation difficult. We can examine which features had most influence on each component and which components were most important as inputs to the model:
 
 ![image](https://github.com/jtimko16/AutoML_Project2/blob/main/plots/PCA_components_importance.png)
 
-However, we use explainability tools on simple Random Forest model without PCA to get more insights to the important features, their relationship with the dependant variable and explanations for specific predictions.
+However, further we use explainability tools on simple Random Forest model without PCA to get more insights to the important features, their relationship with the dependant variable and explanations for specific predictions.
+
+### Model and Features Interpretability - by Jan
 
 Here is the full notebook with [Interpretability](https://github.com/jtimko16/AutoML_Project2/blob/main/notebooks/8.%20Interpretability.ipynb), which contains:
 * Information value using Random Forest (top 10 features)
-* Partial Dependence Plot
+
+![image](https://github.com/jtimko16/AutoML_Project2/blob/main/plots/Random_Forest_features_importance.png)
+
+* Partial Dependence Plots
+  * We tested several partial dependence plots such as:
+    * Maize_lag-1 and lag-2 separately
+  ![image](https://github.com/jtimko16/AutoML_Project2/blob/main/plots/PDP_Maize_lagged_separately.png)
+
+    * Maize_lag-1 and lag-2 combined
+  ![image](https://github.com/jtimko16/AutoML_Project2/blob/main/plots/PDP_Maize_lagged_combined.png)
+
+    * Maize_lag-1 and precipitation 
+  ![image](https://github.com/jtimko16/AutoML_Project2/blob/main/plots/PDP_combined_maize_lagged_precipitation.png)
+
+    * Sow_month and Lattitude
+  ![image](https://github.com/jtimko16/AutoML_Project2/blob/main/plots/Sow_month_lattitude_combined.png)
+
+
 * LIME explanation of three instances
+  * We explained three instances, in Tanzania, South Africa and Egypt
+    * Tanzania example
+  ![image](https://github.com/jtimko16/AutoML_Project2/blob/main/plots/LIME_01.png)
+
+    * South Africa example
+  ![image](https://github.com/jtimko16/AutoML_Project2/blob/main/plots/LIME_02.png)
+
+    * Kenya example
+![image](https://github.com/jtimko16/AutoML_Project2/blob/main/plots/LIME_02.png)
 
