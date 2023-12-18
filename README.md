@@ -60,7 +60,7 @@ AutoKeras NN - The structure of the model that AutoKeras chose is the following:
 * Another dense layer* with 16 neurons also followed by a ReLU activation.
 * A regression head(a single dense neuron with a linear activation), which is the output layer for regression tasks
 
-Hyperopt [notebook](https://github.com/jtimko16/AutoML_Project2/blob/main/notebooks/9_Hyperopt_experiment.ipynb) experiment on limited subsample and small number on iterations was also conducted by Andri on four baseline regressors. However due to the high computational cost, it was not done in full over all the regressors on full dataset with optimal number iterations and is therefore not included in final results. As a test, MAE for linear regression on full dataset with 200 iterations was improved as compared to baseline metric, reaching the level of PyCaret.
+Hyperopt ([notebook](https://github.com/jtimko16/AutoML_Project2/blob/main/notebooks/9_Hyperopt_experiment.ipynb)) experiment on limited subsample and small number on iterations was also conducted by Andri on four baseline regressors. However due to the high computational cost, it was not done in full over all the regressors on full dataset with optimal number iterations and is therefore not included in final results. As a test, MAE for linear regression on full dataset with 200 iterations was improved as compared to baseline metric, reaching the level of PyCaret.
 
 ## Model interpretation
 
