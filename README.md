@@ -43,13 +43,12 @@ Contributors: Kea and Jan
   * AutoGluon [notebook](https://github.com/jtimko16/AutoML_Project2/blob/main/notebooks/3.AutoGluon.ipynb) by Andri.
   * PyCaret [notebook](https://github.com/jtimko16/AutoML_Project2/blob/main/notebooks/4.PyCaret.ipynb) by Kea. Best model was tuned HuberRegressor(alpha=0.01, epsilon=1.1).
   * AutoKeras [notebook](https://github.com/jtimko16/AutoML_Project2/blob/main/notebooks/6.AutoKeras.ipynb) and H2O [notebook](https://github.com/jtimko16/AutoML_Project2/blob/main/notebooks/7.h2o_no_countries_and_farm.ipynb) notebooks by Valerija. In H2O two best models have been compared, since those are StackedEnsemble_BestOfFamily and StackedEnsemble_AllModels and the results of the cross-validation could have been misleading.
-
  
  Comparison of AutoML frameworks by performance on the test set (year 2016).
 
  Approach details | Baseline | TPOT | AutoGluon | PyCaret | AutoKeras | H2O
 --- | --- | --- | --- |--- |--- |---
-Data preprocessing | MinMax Scaler | None | MinMax Scaler | Robust Scaler | Automated  | Automated  
+Data preprocessing | MinMax Scaler | None | None | Robust Scaler | Automated  | Automated  
 Model | Linear Regression | PCA + ElasticNetCV | ExtraTreesMSE | Tuned Huber Regressor | NN* |  'StackedEnsemble_BestOfFamily'  
 RMSE | 0.33 | 0.2818 | 0.3069 | 0.3262 | 0.4081 |  0.334 
 MAE  | 0.213 | 0.1856 | 0.1901 | 0.2000 | 0.3361 | 0.2143
@@ -60,6 +59,8 @@ AutoKeras NN - The structure of the model that AutoKeras chose is the following:
 * A dense layer with 32 neurons followed by a ReLU activation.
 * Another dense layer* with 16 neurons also followed by a ReLU activation.
 * A regression head(a single dense neuron with a linear activation), which is the output layer for regression tasks
+
+Hyperopt [notebook](https://github.com/jtimko16/AutoML_Project2/blob/main/notebooks/9_Hyperopt_experiment.ipynb) experiment on limited subsample and small number on iterations was also conducted by Andri on four baseline regressors. However due to the high computational cost, it was not done in full over all the regressors on full dataset with optimal number iterations and is therefore not included in final results. As a test, MAE for linear regression on full dataset with 200 iterations was improved as compared to baseline metric, reaching the level of PyCaret.
 
 ## Model interpretation
 
